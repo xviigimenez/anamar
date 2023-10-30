@@ -1,0 +1,17 @@
+D:\anamar\relojoaria_anamar\bin\Debug\relojoaria_anamar.exe.config
+D:\anamar\relojoaria_anamar\bin\Debug\relojoaria_anamar.exe
+D:\anamar\relojoaria_anamar\bin\Debug\relojoaria_anamar.pdb
+D:\anamar\relojoaria_anamar\bin\Debug\relojoaria_anamar.xml
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.AssemblyReference.cache
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.SuggestedBindingRedirects.cache
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Resources.resources
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.GenerateResource.cache
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.CoreCompileInputs.cache
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.exe
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.xml
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.pdb
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Inicio.resources
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.MenuInicial.resources
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Estoque.resources
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Vendas.resources
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Sobre.resources
