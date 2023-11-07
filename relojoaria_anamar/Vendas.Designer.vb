@@ -31,16 +31,16 @@ Partial Class Vendas
         Me.cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pagamento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tab_venda_cadastro = New System.Windows.Forms.TabPage()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txt_data = New System.Windows.Forms.TextBox()
         Me.cmb_pagamento = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.txt_cliente = New System.Windows.Forms.TextBox()
         Me.txt_nome = New System.Windows.Forms.TextBox()
-        Me.txt_data = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.txt_cadastrar = New System.Windows.Forms.Button()
         Me.tab_vendas.SuspendLayout()
         Me.tab_venda_consulta.SuspendLayout()
         CType(Me.dgv_vendas, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,18 +54,20 @@ Partial Class Vendas
         Me.tab_vendas.Controls.Add(Me.tab_venda_cadastro)
         Me.tab_vendas.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tab_vendas.Location = New System.Drawing.Point(0, 0)
+        Me.tab_vendas.Margin = New System.Windows.Forms.Padding(2)
         Me.tab_vendas.Name = "tab_vendas"
         Me.tab_vendas.SelectedIndex = 0
-        Me.tab_vendas.Size = New System.Drawing.Size(678, 287)
+        Me.tab_vendas.Size = New System.Drawing.Size(536, 282)
         Me.tab_vendas.TabIndex = 1
         '
         'tab_venda_consulta
         '
         Me.tab_venda_consulta.Controls.Add(Me.dgv_vendas)
-        Me.tab_venda_consulta.Location = New System.Drawing.Point(4, 29)
+        Me.tab_venda_consulta.Location = New System.Drawing.Point(4, 22)
+        Me.tab_venda_consulta.Margin = New System.Windows.Forms.Padding(2)
         Me.tab_venda_consulta.Name = "tab_venda_consulta"
-        Me.tab_venda_consulta.Padding = New System.Windows.Forms.Padding(3)
-        Me.tab_venda_consulta.Size = New System.Drawing.Size(670, 254)
+        Me.tab_venda_consulta.Padding = New System.Windows.Forms.Padding(2)
+        Me.tab_venda_consulta.Size = New System.Drawing.Size(528, 256)
         Me.tab_venda_consulta.TabIndex = 0
         Me.tab_venda_consulta.Text = "Consulta de vendas"
         Me.tab_venda_consulta.UseVisualStyleBackColor = True
@@ -76,11 +78,12 @@ Partial Class Vendas
         Me.dgv_vendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_vendas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.data, Me.nome, Me.cliente, Me.pagamento})
         Me.dgv_vendas.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_vendas.Location = New System.Drawing.Point(3, 3)
+        Me.dgv_vendas.Location = New System.Drawing.Point(2, 2)
+        Me.dgv_vendas.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_vendas.Name = "dgv_vendas"
         Me.dgv_vendas.RowHeadersWidth = 62
         Me.dgv_vendas.RowTemplate.Height = 28
-        Me.dgv_vendas.Size = New System.Drawing.Size(664, 248)
+        Me.dgv_vendas.Size = New System.Drawing.Size(524, 252)
         Me.dgv_vendas.TabIndex = 0
         '
         'id
@@ -116,94 +119,14 @@ Partial Class Vendas
         'tab_venda_cadastro
         '
         Me.tab_venda_cadastro.Controls.Add(Me.TableLayoutPanel1)
-        Me.tab_venda_cadastro.Location = New System.Drawing.Point(4, 29)
+        Me.tab_venda_cadastro.Location = New System.Drawing.Point(4, 22)
+        Me.tab_venda_cadastro.Margin = New System.Windows.Forms.Padding(2)
         Me.tab_venda_cadastro.Name = "tab_venda_cadastro"
-        Me.tab_venda_cadastro.Padding = New System.Windows.Forms.Padding(3)
-        Me.tab_venda_cadastro.Size = New System.Drawing.Size(670, 254)
+        Me.tab_venda_cadastro.Padding = New System.Windows.Forms.Padding(2)
+        Me.tab_venda_cadastro.Size = New System.Drawing.Size(528, 256)
         Me.tab_venda_cadastro.TabIndex = 1
         Me.tab_venda_cadastro.Text = "Cadastro de vendas"
         Me.tab_venda_cadastro.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.Location = New System.Drawing.Point(165, 133)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(496, 112)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Cadastrar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'cmb_pagamento
-        '
-        Me.cmb_pagamento.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.cmb_pagamento.FormattingEnabled = True
-        Me.cmb_pagamento.Items.AddRange(New Object() {"Dinheiro", "Pix", "Débito", "Credito"})
-        Me.cmb_pagamento.Location = New System.Drawing.Point(165, 99)
-        Me.cmb_pagamento.Name = "cmb_pagamento"
-        Me.cmb_pagamento.Size = New System.Drawing.Size(496, 28)
-        Me.cmb_pagamento.TabIndex = 7
-        '
-        'txt_cliente
-        '
-        Me.txt_cliente.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txt_cliente.Location = New System.Drawing.Point(165, 67)
-        Me.txt_cliente.Name = "txt_cliente"
-        Me.txt_cliente.Size = New System.Drawing.Size(496, 26)
-        Me.txt_cliente.TabIndex = 6
-        '
-        'txt_nome
-        '
-        Me.txt_nome.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txt_nome.Location = New System.Drawing.Point(165, 35)
-        Me.txt_nome.Name = "txt_nome"
-        Me.txt_nome.Size = New System.Drawing.Size(496, 26)
-        Me.txt_nome.TabIndex = 5
-        '
-        'txt_data
-        '
-        Me.txt_data.Cursor = System.Windows.Forms.Cursors.No
-        Me.txt_data.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txt_data.Location = New System.Drawing.Point(165, 3)
-        Me.txt_data.Name = "txt_data"
-        Me.txt_data.Size = New System.Drawing.Size(496, 26)
-        Me.txt_data.TabIndex = 4
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(3, 96)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(150, 20)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Meio de pagamento"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(3, 64)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(58, 20)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Cliente"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(3, 32)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Nome"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Data"
         '
         'TableLayoutPanel1
         '
@@ -218,25 +141,117 @@ Partial Class Vendas
         Me.TableLayoutPanel1.Controls.Add(Me.txt_cliente, 1, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.txt_nome, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button1, 1, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.txt_cadastrar, 1, 4)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(3, 3)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(2, 2)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(664, 248)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(524, 252)
         Me.TableLayoutPanel1.TabIndex = 10
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(2, 0)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(30, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Data"
+        '
+        'txt_data
+        '
+        Me.txt_data.Cursor = System.Windows.Forms.Cursors.No
+        Me.txt_data.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txt_data.Location = New System.Drawing.Point(130, 2)
+        Me.txt_data.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_data.Name = "txt_data"
+        Me.txt_data.Size = New System.Drawing.Size(392, 20)
+        Me.txt_data.TabIndex = 4
+        '
+        'cmb_pagamento
+        '
+        Me.cmb_pagamento.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cmb_pagamento.FormattingEnabled = True
+        Me.cmb_pagamento.Items.AddRange(New Object() {"Dinheiro", "Pix", "Débito", "Credito"})
+        Me.cmb_pagamento.Location = New System.Drawing.Point(130, 74)
+        Me.cmb_pagamento.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_pagamento.Name = "cmb_pagamento"
+        Me.cmb_pagamento.Size = New System.Drawing.Size(392, 21)
+        Me.cmb_pagamento.TabIndex = 7
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(2, 24)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(35, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Nome"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(2, 72)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(101, 13)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Meio de pagamento"
+        '
+        'txt_cliente
+        '
+        Me.txt_cliente.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txt_cliente.Location = New System.Drawing.Point(130, 50)
+        Me.txt_cliente.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_cliente.Name = "txt_cliente"
+        Me.txt_cliente.Size = New System.Drawing.Size(392, 20)
+        Me.txt_cliente.TabIndex = 6
+        '
+        'txt_nome
+        '
+        Me.txt_nome.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txt_nome.Location = New System.Drawing.Point(130, 26)
+        Me.txt_nome.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_nome.Name = "txt_nome"
+        Me.txt_nome.Size = New System.Drawing.Size(392, 20)
+        Me.txt_nome.TabIndex = 5
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(2, 48)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Cliente"
+        '
+        'txt_cadastrar
+        '
+        Me.txt_cadastrar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txt_cadastrar.Location = New System.Drawing.Point(130, 99)
+        Me.txt_cadastrar.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_cadastrar.Name = "txt_cadastrar"
+        Me.txt_cadastrar.Size = New System.Drawing.Size(392, 151)
+        Me.txt_cadastrar.TabIndex = 9
+        Me.txt_cadastrar.Text = "Cadastrar"
+        Me.txt_cadastrar.UseVisualStyleBackColor = True
         '
         'Vendas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(678, 287)
+        Me.ClientSize = New System.Drawing.Size(536, 282)
         Me.Controls.Add(Me.tab_vendas)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Vendas"
         Me.Text = "Vendas"
         Me.tab_vendas.ResumeLayout(False)
@@ -266,6 +281,6 @@ Partial Class Vendas
     Friend WithEvents cmb_pagamento As ComboBox
     Friend WithEvents txt_cliente As TextBox
     Friend WithEvents txt_nome As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents txt_cadastrar As Button
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
 End Class

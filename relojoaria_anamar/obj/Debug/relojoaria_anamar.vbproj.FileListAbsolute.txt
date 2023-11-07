@@ -15,3 +15,5 @@ D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.MenuInicial.resources
 D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Estoque.resources
 D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Vendas.resources
 D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Sobre.resources
+D:\anamar\relojoaria_anamar\obj\Debug\Interop.ADODB.dll
+D:\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.ResolveComReference.cache
