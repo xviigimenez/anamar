@@ -10,8 +10,9 @@
 * [ ] Preencher as opções da barra de ferramentas
 * [ ] Criar o banco com a estrutura a ser utilizada
 * [ ] Fazer o design das telas no projeto
-* [ ] Preencher a data automaticamente nos formulários
+* [X] Preencher a data automaticamente nos formulários
 * [ ] Fazer cada tela fechar após abrir outra
+* [X] Ocultar a senha de confirmação no início
 
 ### Telas
 
@@ -21,8 +22,8 @@
 	- [ ] Consulta do estoque atual: Tabela com os itens atualmente presentes em estoque, destacando os itens que se encontram fora de estoque, e com opções de edição e exclusão
 	- [ ] Registro de compras de estoque e edição dos itens cadastrados: Cadastro de novos itens, podendo adicionar vários de uma vez (caso o item exista, a quantia deve ser somada à linha na tabela de estoque; caso contrário, deve ser adicionada uma nova linha)
 * [ ] **Vendas**
-	- [ ] Registro de vendas: Cadastro de vendas, podendo adicionar vários itens e distingui-los dentre produtos e serviços e, no último caso, podendo adicionar quais itens foram utilizados no serviço
-	- [ ] Consulta de vendas: Tabela com as últimas vendas realizadas, contendo todas as informações pertinentes
+	- [X] Registro de vendas: Cadastro de vendas, podendo adicionar vários itens e distingui-los dentre produtos e serviços e, no último caso, podendo adicionar quais itens foram utilizados no serviço
+	- [X] Consulta de vendas: Tabela com as últimas vendas realizadas, contendo todas as informações pertinentes
 * **Contabilidade**
 	- [ ] Consulta e geração de relatórios
 	
