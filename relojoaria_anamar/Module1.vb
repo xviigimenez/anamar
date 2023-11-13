@@ -31,17 +31,47 @@
             sql = "select * from vendas"
             rs = db.Execute(sql)
             With Vendas.dgv_vendas
-                Dim cont = 1
                 .Rows.Clear()
                 Do While rs.EOF = False
                     .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value)
                     ' Continua lendo as próximas linhas
                     rs.MoveNext()
-                    cont = cont + 1
                 Loop
             End With
         Catch ex As Exception
-            MsgBox("Erro ao carregar dados do banco", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Atenção")
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao carregar os dados de vendas")
+        End Try
+    End Sub
+
+    Sub carregar_dados_estoque()
+        Try
+            sql = "select * from estoque"
+            rs = db.Execute(sql)
+            With Estoque.dgv_estoque
+                .Rows.Clear()
+                Do While rs.EOF = False
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value)
+                    rs.MoveNext()
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + vbOKOnly, "Erro ao carregar dados de estoque")
+        End Try
+    End Sub
+
+    Sub carregar_dados_compras()
+        Try
+            sql = "select * from compras"
+            rs = db.Execute(sql)
+            With Estoque.dgv_compras
+                .Rows.Clear()
+                Do While rs.EOF = False
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value)
+                    rs.MoveNext()
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Atenção")
         End Try
     End Sub
 
@@ -51,6 +81,23 @@
             '.txt_cliente.Clear()
             .cmb_pagamento.Text = ""
             .txt_produto.Focus()
+        End With
+    End Sub
+
+    Sub limpar_dados_estoque_compra()
+        With Estoque
+            .txt_fornecedor.Clear()
+            .cmb_pagamento.Text = ""
+            .txt_fornecedor.Focus()
+        End With
+    End Sub
+
+    Sub limpar_dados_estoque_produto()
+        With Estoque
+            .txt_nome.Clear()
+            .txt_quantidade.Clear()
+            .txt_preco.Clear()
+            .txt_nome.Focus()
         End With
     End Sub
 End Module

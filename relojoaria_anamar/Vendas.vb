@@ -13,7 +13,7 @@
             'If rs.EOF = True Then
             sql = "insert into vendas (data, nome, cliente, pagamento) values ('" & txt_data.Text & "', '" & txt_produto.Text & "', '" & txt_cliente.Text & "', '" & cmb_pagamento.Text & "')"
             rs = db.Execute(sql)
-            MsgBox("Dados gravados com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+            MsgBox("Venda cadastrada com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
             ' Limpa os campos
             limpar_dados_vendas()
             ' Atualiza os dados
