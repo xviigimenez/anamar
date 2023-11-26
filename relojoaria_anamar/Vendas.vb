@@ -2,8 +2,9 @@
     Private Sub Vendas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conectar_banco_access()
         carregar_dados_vendas()
+        carregar_produtos_vendas()
         txt_data.Text = DateTime.Today
-        txt_produto.Focus()
+        cmb_produto.Focus()
     End Sub
 
     Private Sub txt_cadastrar_Click(sender As Object, e As EventArgs) Handles txt_cadastrar.Click
@@ -11,7 +12,7 @@
             'sql = "select * from tb_vendas where usuario='" & txt_data.Text & "'"
             'rs = db.Execute(sql)
             'If rs.EOF = True Then
-            sql = "insert into vendas (data, nome, cliente, pagamento) values ('" & txt_data.Text & "', '" & txt_produto.Text & "', '" & txt_cliente.Text & "', '" & cmb_pagamento.Text & "')"
+            sql = "insert into vendas (data, nome, cliente, pagamento) values ('" & txt_data.Text & "', '" & cmb_produto.Text & "', '" & txt_cliente.Text & "', '" & cmb_pagamento.Text & "')"
             rs = db.Execute(sql)
             MsgBox("Venda cadastrada com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
             ' Limpa os campos

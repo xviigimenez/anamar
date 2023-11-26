@@ -77,10 +77,10 @@
 
     Sub limpar_dados_vendas()
         With Vendas
-            .txt_produto.Clear()
+            .cmb_produto.Text = ""
             '.txt_cliente.Clear()
             .cmb_pagamento.Text = ""
-            .txt_produto.Focus()
+            .cmb_produto.Focus()
         End With
     End Sub
 
@@ -94,10 +94,43 @@
 
     Sub limpar_dados_estoque_produto()
         With Estoque
-            .txt_nome.Clear()
+            .cmb_nome.Text = ""
             .txt_quantidade.Clear()
             .txt_preco.Clear()
-            .txt_nome.Focus()
+            .cmb_nome.Focus()
         End With
+    End Sub
+
+    ' Carrega os produtos no ComboBox
+    Sub carregar_produtos_vendas()
+        Try
+            sql = "select nome from estoque"
+            rs = db.Execute(sql)
+            With Vendas.cmb_produto.Items
+                .Clear()
+                Do While rs.EOF = False
+                    .Add(rs.Fields(0).Value)
+                    rs.MoveNext()
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Atenção")
+        End Try
+    End Sub
+
+    Sub carregar_produtos_estoque()
+        Try
+            sql = "select nome from estoque"
+            rs = db.Execute(sql)
+            With Estoque.cmb_nome.Items
+                .Clear()
+                Do While rs.EOF = False
+                    .Add(rs.Fields(0).Value)
+                    rs.MoveNext()
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Atenção")
+        End Try
     End Sub
 End Module
