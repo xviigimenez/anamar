@@ -5,6 +5,7 @@
         carregar_dados_estoque()
         carregar_dados_compras()
         carregar_produtos_estoque()
+        carregar_fornecedores_vendas()
     End Sub
 
     Private Sub btn_limpar_Click(sender As Object, e As EventArgs) Handles btn_limpar.Click
@@ -14,7 +15,7 @@
     Private Sub btn_cadastrar_Click(sender As Object, e As EventArgs) Handles btn_cadastrar.Click
         Try
             ' Cadastra a compra
-            sql = "insert into compras (data, nome, fornecedor, quantia, valor, pagamento) values ('" & txt_data.Text & "', '" & cmb_nome.Text & "', '" & txt_fornecedor.Text & "', '" & txt_quantidade.Text & "', '" & txt_preco.Text & "', '" & cmb_pagamento.Text & "')"
+            sql = "insert into compras (data, nome, fornecedor, quantia, valor, pagamento) values ('" & txt_data.Text & "', '" & cmb_nome.Text & "', '" & cmb_fornecedor.Text & "', '" & txt_quantidade.Text & "', '" & txt_preco.Text & "', '" & cmb_pagamento.Text & "')"
             db.Execute(sql)
             MsgBox("Compra cadastrada com sucesso!", MsgBoxStyle.Information + vbOKOnly, "Cadastro de compra")
             ' Verifica caso já existe o produto no estoque

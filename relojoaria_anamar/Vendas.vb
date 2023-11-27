@@ -3,6 +3,7 @@
         conectar_banco_access()
         carregar_dados_vendas()
         carregar_produtos_vendas()
+        carregar_clientes_vendas()
         txt_data.Text = DateTime.Today
         cmb_produto.Focus()
     End Sub
@@ -12,7 +13,7 @@
             'sql = "select * from tb_vendas where usuario='" & txt_data.Text & "'"
             'rs = db.Execute(sql)
             'If rs.EOF = True Then
-            sql = "insert into vendas (data, nome, cliente, pagamento) values ('" & txt_data.Text & "', '" & cmb_produto.Text & "', '" & txt_cliente.Text & "', '" & cmb_pagamento.Text & "')"
+            sql = "insert into vendas (data, nome, cliente, pagamento) values ('" & txt_data.Text & "', '" & cmb_produto.Text & "', '" & cmb_cliente.Text & "', '" & cmb_pagamento.Text & "')"
             rs = db.Execute(sql)
             MsgBox("Venda cadastrada com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
             ' Limpa os campos
@@ -23,7 +24,7 @@
             '           MsgBox("Produto já cadastrado!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
             '          End If
         Catch ex As Exception
-            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Aviso")
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Cadastro de venda")
         End Try
     End Sub
 

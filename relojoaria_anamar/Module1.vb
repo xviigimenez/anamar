@@ -5,6 +5,8 @@
     Public db As New ADODB.Connection
     Public rs As New ADODB.Recordset
     Public sql, resp As String
+    Public existe As Boolean
+    Public id As Integer
     Public caminho = Application.StartupPath & "\Banco\relojoaria_anamar.mdb"
 
     Sub conectar_banco_access()
@@ -78,7 +80,7 @@
     Sub limpar_dados_vendas()
         With Vendas
             .cmb_produto.Text = ""
-            '.txt_cliente.Clear()
+            '.cmb_cliente.Clear()
             .cmb_pagamento.Text = ""
             .cmb_produto.Focus()
         End With
@@ -86,9 +88,9 @@
 
     Sub limpar_dados_estoque_compra()
         With Estoque
-            .txt_fornecedor.Clear()
+            .cmb_fornecedor.Text = ""
             .cmb_pagamento.Text = ""
-            .txt_fornecedor.Focus()
+            .cmb_fornecedor.Focus()
         End With
     End Sub
 
@@ -97,6 +99,27 @@
             .cmb_nome.Text = ""
             .txt_quantidade.Clear()
             .txt_preco.Clear()
+            .cmb_nome.Focus()
+        End With
+    End Sub
+
+    Sub limpar_dados_clientes()
+        With Clientes
+            .cmb_nome.Text = ""
+            .txt_telefone.Clear()
+            .txt_cpf.Clear()
+            .txt_endereco.Clear()
+            .cmb_nome.Focus()
+        End With
+    End Sub
+
+    Sub limpar_dados_fornecedores()
+        With Fornecedores
+            .cmb_nome.Text = ""
+            .txt_telefone1.Clear()
+            .txt_telefone2.Clear()
+            .txt_endereco.Clear()
+            .txt_cnpj.Clear()
             .cmb_nome.Focus()
         End With
     End Sub
@@ -114,7 +137,23 @@
                 Loop
             End With
         Catch ex As Exception
-            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Atenção")
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao carregar produtos")
+        End Try
+    End Sub
+
+    Sub carregar_clientes_vendas()
+        Try
+            sql = "select nome from clientes"
+            rs = db.Execute(sql)
+            With Vendas.cmb_cliente.Items
+                .Clear()
+                Do While rs.EOF = False
+                    .Add(rs.Fields(0).Value)
+                    rs.MoveNext()
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao carregar clientes")
         End Try
     End Sub
 
@@ -131,6 +170,54 @@
             End With
         Catch ex As Exception
             MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Atenção")
+        End Try
+    End Sub
+
+    Sub carregar_fornecedores_vendas()
+        Try
+            sql = "select nome from fornecedores"
+            rs = db.Execute(sql)
+            With Estoque.cmb_fornecedor.Items
+                .Clear()
+                Do While rs.EOF = False
+                    .Add(rs.Fields(0).Value)
+                    rs.MoveNext()
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao carregar fornecedores")
+        End Try
+    End Sub
+
+    Sub carregar_clientes_clientes()
+        Try
+            sql = "select nome from clientes"
+            rs = db.Execute(sql)
+            With Clientes.cmb_nome.Items
+                .Clear()
+                Do While rs.EOF = False
+                    .Add(rs.Fields(0).Value)
+                    rs.MoveNext()
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao carregar clientes")
+        End Try
+    End Sub
+
+    Sub carregar_fornecedores_fornecedores()
+        Try
+            sql = "select nome from fornecedores"
+            rs = db.Execute(sql)
+            With Fornecedores.cmb_nome.Items
+                .Clear()
+                Do While rs.EOF = False
+                    .Add(rs.Fields(0).Value)
+                    rs.MoveNext()
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao carregar fornecedores")
         End Try
     End Sub
 End Module

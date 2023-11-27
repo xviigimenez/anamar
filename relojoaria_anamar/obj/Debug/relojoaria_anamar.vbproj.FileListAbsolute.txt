@@ -36,3 +36,5 @@ D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.CoreC
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.exe
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.xml
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.pdb
+D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Clientes.resources
+D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Fornecedores.resources

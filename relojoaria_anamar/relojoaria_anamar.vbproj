@@ -73,10 +73,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Estoque.Designer.vb">
       <DependentUpon>Estoque.vb</DependentUpon>
     </Compile>
     <Compile Include="Estoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedores.Designer.vb">
+      <DependentUpon>Fornecedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Sobre.Designer.vb">
@@ -128,8 +146,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estoque.resx">
       <DependentUpon>Estoque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedores.resx">
+      <DependentUpon>Fornecedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sobre.resx">
       <DependentUpon>Sobre.vb</DependentUpon>
