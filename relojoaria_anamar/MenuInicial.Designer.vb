@@ -47,7 +47,7 @@ Partial Class MenuInicial
         Me.lbl_vendas_semana = New System.Windows.Forms.Label()
         Me.lbl_vendas_mês = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lst_fora_de_estoque = New System.Windows.Forms.ListBox()
         Me.ToolStrip1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -223,7 +223,7 @@ Partial Class MenuInicial
         Me.TableLayoutPanel2.Controls.Add(Me.lbl_vendas_semana, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.lbl_vendas_mês, 0, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.ListBox1, 0, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.lst_fora_de_estoque, 0, 5)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(371, 129)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
@@ -301,15 +301,15 @@ Partial Class MenuInicial
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Produtos fora de estoque:"
         '
-        'ListBox1
+        'lst_fora_de_estoque
         '
-        Me.TableLayoutPanel2.SetColumnSpan(Me.ListBox1, 2)
-        Me.ListBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(3, 113)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(357, 132)
-        Me.ListBox1.TabIndex = 11
+        Me.TableLayoutPanel2.SetColumnSpan(Me.lst_fora_de_estoque, 2)
+        Me.lst_fora_de_estoque.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lst_fora_de_estoque.FormattingEnabled = True
+        Me.lst_fora_de_estoque.Location = New System.Drawing.Point(3, 113)
+        Me.lst_fora_de_estoque.Name = "lst_fora_de_estoque"
+        Me.lst_fora_de_estoque.Size = New System.Drawing.Size(357, 132)
+        Me.lst_fora_de_estoque.TabIndex = 11
         '
         'MenuInicial
         '
@@ -356,5 +356,5 @@ Partial Class MenuInicial
     Friend WithEvents lbl_vendas_semana As Label
     Friend WithEvents lbl_vendas_mês As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lst_fora_de_estoque As ListBox
 End Class

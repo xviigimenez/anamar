@@ -240,6 +240,14 @@
                 sql = "select count(*), sum(valor) from vendas where data between #" & Date.Today.Year & "-" & Date.Today.Month & "-01# and #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.DaysInMonth(Date.Today.Year, Date.Today.Month) & "#"
                 rs = db.Execute(sql)
                 .lbl_vendas_mês.Text = "Vendas realizadas no mês: " & rs.Fields(0).Value & " (R$" & rs.Fields(1).Value & ")"
+                ' Produtos fora de estoque
+                .lst_fora_de_estoque.Items.Clear()
+                sql = "select nome from estoque where quantia = 0"
+                rs = db.Execute(sql)
+                While rs.EOF = False
+                    .lst_fora_de_estoque.Items.Add(rs.Fields(0).Value)
+                    rs.MoveNext()
+                End While
             End With
         Catch ex As Exception
             MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao carregar informações")
