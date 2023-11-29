@@ -46,4 +46,11 @@
     Private Sub btn_relatorios_Click_1(sender As Object, e As EventArgs) Handles btn_relatorios.Click
         Relatorios.ShowDialog()
     End Sub
+
+    Private Sub MenuInicial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Permite realizar as queries na próxima função
+        conectar_banco_access()
+        ' Carrega as informações das labels
+        carregar_informacoes_menuinicial()
+    End Sub
 End Class

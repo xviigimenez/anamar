@@ -83,6 +83,7 @@
             '.cmb_cliente.Clear()
             .cmb_pagamento.Text = ""
             .cmb_produto.Focus()
+            .txt_valor.Clear()
         End With
     End Sub
 
@@ -218,6 +219,30 @@
             End With
         Catch ex As Exception
             MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao carregar fornecedores")
+        End Try
+    End Sub
+
+    Sub carregar_informacoes_menuinicial()
+        Try
+            With MenuInicial
+                .lbl_data.Text = "Data atual: " & Date.Today & ""
+                ' Vendas do dia
+                'sql = "select count(*) from vendas where data = #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day & "#" ' Esses "#" me levaram mais de uma hora...
+                sql = "select count(*) from vendas where data = #" & Date.Today & "#" ' Esses "#" me levaram mais de uma hora...
+                rs = db.Execute(sql)
+                .lbl_vendas_hoje.Text = "Vendas realizadas hoje: " & rs.Fields(0).Value & ""
+                ' Vendas da semana
+                'sql = "select count(*) from vendas where data between #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day - Date.Today.DayOfWeek & " and #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day + 7 - Date.Today.DayOfWeek & "#" ' Dá problema ao gerar resultados que são maiores do que 31 ao invés de passar para o mês seguinte
+                sql = "select count(*) from vendas where data between #" & Date.Today.AddDays(-Date.Today.DayOfWeek) & "# and #" & Date.Today.AddDays(7 - Date.Today.DayOfWeek) & "#" ' Este aqui funciona tranquilamente...
+                rs = db.Execute(sql)
+                .lbl_vendas_semana.Text = "Vendas realizadas nesta semana: " & rs.Fields(0).Value & ""
+                ' Vendas do mês
+                sql = "select count(*) from vendas where data between #" & Date.Today.Year & "-" & Date.Today.Month & "-01# and #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.DaysInMonth(Date.Today.Year, Date.Today.Month) & "#"
+                rs = db.Execute(sql)
+                .lbl_vendas_mês.Text = "Vendas realizadas no mês: " & rs.Fields(0).Value & ""
+            End With
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao carregar informações")
         End Try
     End Sub
 End Module

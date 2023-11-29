@@ -53,7 +53,7 @@ Partial Class Clientes
         Me.TableLayoutPanel1.Controls.Add(Me.btn_limpar, 0, 4)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
@@ -61,7 +61,7 @@ Partial Class Clientes
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(334, 172)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(334, 148)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'Label1
@@ -110,7 +110,7 @@ Partial Class Clientes
         '
         Me.txt_telefone.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txt_telefone.Location = New System.Drawing.Point(169, 27)
-        Me.txt_telefone.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txt_telefone.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_telefone.Name = "txt_telefone"
         Me.txt_telefone.Size = New System.Drawing.Size(163, 20)
         Me.txt_telefone.TabIndex = 1
@@ -119,7 +119,7 @@ Partial Class Clientes
         '
         Me.txt_cpf.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txt_cpf.Location = New System.Drawing.Point(169, 51)
-        Me.txt_cpf.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txt_cpf.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_cpf.Name = "txt_cpf"
         Me.txt_cpf.Size = New System.Drawing.Size(163, 20)
         Me.txt_cpf.TabIndex = 2
@@ -128,7 +128,7 @@ Partial Class Clientes
         '
         Me.txt_endereco.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txt_endereco.Location = New System.Drawing.Point(169, 75)
-        Me.txt_endereco.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txt_endereco.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_endereco.Name = "txt_endereco"
         Me.txt_endereco.Size = New System.Drawing.Size(163, 20)
         Me.txt_endereco.TabIndex = 3
@@ -138,9 +138,9 @@ Partial Class Clientes
         Me.btn_cadastrar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btn_cadastrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_cadastrar.Location = New System.Drawing.Point(169, 99)
-        Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_cadastrar.Name = "btn_cadastrar"
-        Me.btn_cadastrar.Size = New System.Drawing.Size(163, 71)
+        Me.btn_cadastrar.Size = New System.Drawing.Size(163, 47)
         Me.btn_cadastrar.TabIndex = 4
         Me.btn_cadastrar.Text = "Cadastrar"
         Me.btn_cadastrar.UseVisualStyleBackColor = True
@@ -150,7 +150,7 @@ Partial Class Clientes
         Me.cmb_nome.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cmb_nome.FormattingEnabled = True
         Me.cmb_nome.Location = New System.Drawing.Point(169, 2)
-        Me.cmb_nome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmb_nome.Margin = New System.Windows.Forms.Padding(2)
         Me.cmb_nome.Name = "cmb_nome"
         Me.cmb_nome.Size = New System.Drawing.Size(163, 21)
         Me.cmb_nome.TabIndex = 0
@@ -159,9 +159,9 @@ Partial Class Clientes
         '
         Me.btn_limpar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btn_limpar.Location = New System.Drawing.Point(2, 99)
-        Me.btn_limpar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn_limpar.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_limpar.Name = "btn_limpar"
-        Me.btn_limpar.Size = New System.Drawing.Size(163, 71)
+        Me.btn_limpar.Size = New System.Drawing.Size(163, 47)
         Me.btn_limpar.TabIndex = 11
         Me.btn_limpar.Text = "Limpar"
         Me.btn_limpar.UseVisualStyleBackColor = True
@@ -170,9 +170,9 @@ Partial Class Clientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(334, 172)
+        Me.ClientSize = New System.Drawing.Size(334, 148)
         Me.Controls.Add(Me.TableLayoutPanel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Clientes"
         Me.Text = "Clientes"
         Me.TableLayoutPanel1.ResumeLayout(False)

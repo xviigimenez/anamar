@@ -33,7 +33,7 @@ Partial Class Vendas
         Me.excluir = New System.Windows.Forms.DataGridViewImageColumn()
         Me.tab_venda_cadastro = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.txt_cadastrar = New System.Windows.Forms.Button()
+        Me.btn_cadastrar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_data = New System.Windows.Forms.TextBox()
         Me.cmb_pagamento = New System.Windows.Forms.ComboBox()
@@ -43,7 +43,7 @@ Partial Class Vendas
         Me.cmb_cliente = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt_valor = New System.Windows.Forms.TextBox()
         Me.tab_vendas.SuspendLayout()
         Me.tab_venda_consulta.SuspendLayout()
         CType(Me.dgv_vendas, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -142,7 +142,7 @@ Partial Class Vendas
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.54068!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.45932!))
-        Me.TableLayoutPanel1.Controls.Add(Me.txt_cadastrar, 0, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.btn_cadastrar, 0, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.txt_data, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.cmb_pagamento, 1, 3)
@@ -152,7 +152,7 @@ Partial Class Vendas
         Me.TableLayoutPanel1.Controls.Add(Me.cmb_cliente, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Label5, 0, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox1, 1, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.txt_valor, 1, 4)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(2, 1)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
@@ -167,17 +167,17 @@ Partial Class Vendas
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(463, 202)
         Me.TableLayoutPanel1.TabIndex = 10
         '
-        'txt_cadastrar
+        'btn_cadastrar
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.txt_cadastrar, 2)
-        Me.txt_cadastrar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txt_cadastrar.Location = New System.Drawing.Point(2, 120)
-        Me.txt_cadastrar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
-        Me.txt_cadastrar.Name = "txt_cadastrar"
-        Me.txt_cadastrar.Size = New System.Drawing.Size(459, 81)
-        Me.txt_cadastrar.TabIndex = 5
-        Me.txt_cadastrar.Text = "Cadastrar"
-        Me.txt_cadastrar.UseVisualStyleBackColor = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.btn_cadastrar, 2)
+        Me.btn_cadastrar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btn_cadastrar.Location = New System.Drawing.Point(2, 120)
+        Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.btn_cadastrar.Name = "btn_cadastrar"
+        Me.btn_cadastrar.Size = New System.Drawing.Size(459, 81)
+        Me.btn_cadastrar.TabIndex = 5
+        Me.btn_cadastrar.Text = "Cadastrar"
+        Me.btn_cadastrar.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -238,7 +238,7 @@ Partial Class Vendas
         Me.cmb_produto.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cmb_produto.FormattingEnabled = True
         Me.cmb_produto.Location = New System.Drawing.Point(115, 49)
-        Me.cmb_produto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmb_produto.Margin = New System.Windows.Forms.Padding(2)
         Me.cmb_produto.Name = "cmb_produto"
         Me.cmb_produto.Size = New System.Drawing.Size(346, 21)
         Me.cmb_produto.TabIndex = 2
@@ -248,7 +248,7 @@ Partial Class Vendas
         Me.cmb_cliente.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cmb_cliente.FormattingEnabled = True
         Me.cmb_cliente.Location = New System.Drawing.Point(115, 24)
-        Me.cmb_cliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmb_cliente.Margin = New System.Windows.Forms.Padding(2)
         Me.cmb_cliente.Name = "cmb_cliente"
         Me.cmb_cliente.Size = New System.Drawing.Size(346, 21)
         Me.cmb_cliente.TabIndex = 1
@@ -275,14 +275,14 @@ Partial Class Vendas
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "Valor"
         '
-        'TextBox1
+        'txt_valor
         '
-        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox1.Location = New System.Drawing.Point(115, 97)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(346, 20)
-        Me.TextBox1.TabIndex = 4
+        Me.txt_valor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txt_valor.Location = New System.Drawing.Point(115, 97)
+        Me.txt_valor.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_valor.Name = "txt_valor"
+        Me.txt_valor.Size = New System.Drawing.Size(346, 20)
+        Me.txt_valor.TabIndex = 4
         '
         'Vendas
         '
@@ -322,7 +322,7 @@ Partial Class Vendas
     Friend WithEvents Label2 As Label
     Friend WithEvents cmb_produto As ComboBox
     Friend WithEvents cmb_cliente As ComboBox
-    Friend WithEvents txt_cadastrar As Button
+    Friend WithEvents btn_cadastrar As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_valor As TextBox
 End Class

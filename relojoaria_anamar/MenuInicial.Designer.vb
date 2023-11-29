@@ -40,9 +40,18 @@ Partial Class MenuInicial
         Me.btn_vendas = New System.Windows.Forms.Button()
         Me.btn_relatorios = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl_data = New System.Windows.Forms.Label()
+        Me.lbl_vendas_hoje = New System.Windows.Forms.Label()
+        Me.lbl_vendas_semana = New System.Windows.Forms.Label()
+        Me.lbl_vendas_mês = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.ToolStrip1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -143,13 +152,14 @@ Partial Class MenuInicial
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.btn_estoque, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.btn_vendas, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.btn_relatorios, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox1, 1, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 25)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
@@ -162,7 +172,7 @@ Partial Class MenuInicial
         '
         Me.btn_estoque.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btn_estoque.Location = New System.Drawing.Point(2, 2)
-        Me.btn_estoque.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn_estoque.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_estoque.Name = "btn_estoque"
         Me.btn_estoque.Size = New System.Drawing.Size(364, 122)
         Me.btn_estoque.TabIndex = 0
@@ -173,7 +183,7 @@ Partial Class MenuInicial
         '
         Me.btn_vendas.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btn_vendas.Location = New System.Drawing.Point(2, 128)
-        Me.btn_vendas.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn_vendas.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_vendas.Name = "btn_vendas"
         Me.btn_vendas.Size = New System.Drawing.Size(364, 122)
         Me.btn_vendas.TabIndex = 1
@@ -184,7 +194,7 @@ Partial Class MenuInicial
         '
         Me.btn_relatorios.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btn_relatorios.Location = New System.Drawing.Point(2, 254)
-        Me.btn_relatorios.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn_relatorios.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_relatorios.Name = "btn_relatorios"
         Me.btn_relatorios.Size = New System.Drawing.Size(364, 124)
         Me.btn_relatorios.TabIndex = 2
@@ -202,6 +212,105 @@ Partial Class MenuInicial
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 2
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.lbl_data, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.lbl_vendas_hoje, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.lbl_vendas_semana, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.lbl_vendas_mês, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.ListBox1, 0, 5)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(371, 129)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 6
+        Me.TableLayoutPanel1.SetRowSpan(Me.TableLayoutPanel2, 2)
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(363, 248)
+        Me.TableLayoutPanel2.TabIndex = 6
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(3, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(193, 30)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Seja bem-vindo!"
+        '
+        'lbl_data
+        '
+        Me.lbl_data.AutoSize = True
+        Me.lbl_data.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.lbl_data.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_data.Location = New System.Drawing.Point(202, 17)
+        Me.lbl_data.Name = "lbl_data"
+        Me.lbl_data.Size = New System.Drawing.Size(158, 13)
+        Me.lbl_data.TabIndex = 6
+        Me.lbl_data.Text = "(Data atual)"
+        '
+        'lbl_vendas_hoje
+        '
+        Me.lbl_vendas_hoje.AutoSize = True
+        Me.TableLayoutPanel2.SetColumnSpan(Me.lbl_vendas_hoje, 2)
+        Me.lbl_vendas_hoje.Location = New System.Drawing.Point(3, 30)
+        Me.lbl_vendas_hoje.Name = "lbl_vendas_hoje"
+        Me.lbl_vendas_hoje.Size = New System.Drawing.Size(87, 13)
+        Me.lbl_vendas_hoje.TabIndex = 7
+        Me.lbl_vendas_hoje.Text = "(Vendas de hoje)"
+        '
+        'lbl_vendas_semana
+        '
+        Me.lbl_vendas_semana.AutoSize = True
+        Me.TableLayoutPanel2.SetColumnSpan(Me.lbl_vendas_semana, 2)
+        Me.lbl_vendas_semana.Location = New System.Drawing.Point(3, 50)
+        Me.lbl_vendas_semana.Name = "lbl_vendas_semana"
+        Me.lbl_vendas_semana.Size = New System.Drawing.Size(104, 13)
+        Me.lbl_vendas_semana.TabIndex = 8
+        Me.lbl_vendas_semana.Text = "(Vendas da semana)"
+        '
+        'lbl_vendas_mês
+        '
+        Me.lbl_vendas_mês.AutoSize = True
+        Me.TableLayoutPanel2.SetColumnSpan(Me.lbl_vendas_mês, 2)
+        Me.lbl_vendas_mês.Location = New System.Drawing.Point(3, 70)
+        Me.lbl_vendas_mês.Name = "lbl_vendas_mês"
+        Me.lbl_vendas_mês.Size = New System.Drawing.Size(86, 13)
+        Me.lbl_vendas_mês.TabIndex = 9
+        Me.lbl_vendas_mês.Text = "(Vendas do mês)"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.TableLayoutPanel2.SetColumnSpan(Me.Label5, 2)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(3, 90)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(173, 17)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Produtos fora de estoque:"
+        '
+        'ListBox1
+        '
+        Me.TableLayoutPanel2.SetColumnSpan(Me.ListBox1, 2)
+        Me.ListBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(3, 113)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(357, 132)
+        Me.ListBox1.TabIndex = 11
+        '
         'MenuInicial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -216,6 +325,8 @@ Partial Class MenuInicial
         Me.ToolStrip1.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -238,4 +349,12 @@ Partial Class MenuInicial
     Friend WithEvents btn_vendas As Button
     Friend WithEvents btn_relatorios As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lbl_data As Label
+    Friend WithEvents lbl_vendas_hoje As Label
+    Friend WithEvents lbl_vendas_semana As Label
+    Friend WithEvents lbl_vendas_mês As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents ListBox1 As ListBox
 End Class

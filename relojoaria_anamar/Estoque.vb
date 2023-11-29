@@ -1,6 +1,6 @@
 ﻿Public Class Estoque
     Private Sub Estoque_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        txt_data.Text = DateTime.Today
+        txt_data.Text = Date.Today
         conectar_banco_access()
         carregar_dados_estoque()
         carregar_dados_compras()
@@ -41,6 +41,8 @@
             carregar_dados_estoque()
             ' Atualiza os produtos no ComboBox
             carregar_produtos_estoque()
+            ' Atualiza as informações no menu inicial
+            carregar_informacoes_menuinicial()
         Catch ex As Exception
             MsgBox(ex.ToString, MsgBoxStyle.Critical + vbOKOnly, "Cadastro de compra")
         End Try
