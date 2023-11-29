@@ -25,12 +25,6 @@ Partial Class Vendas
         Me.tab_vendas = New System.Windows.Forms.TabControl()
         Me.tab_venda_consulta = New System.Windows.Forms.TabPage()
         Me.dgv_vendas = New System.Windows.Forms.DataGridView()
-        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.data = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nome = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.pagamento = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.excluir = New System.Windows.Forms.DataGridViewImageColumn()
         Me.tab_venda_cadastro = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.btn_cadastrar = New System.Windows.Forms.Button()
@@ -44,6 +38,13 @@ Partial Class Vendas
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txt_valor = New System.Windows.Forms.TextBox()
+        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.data = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nome = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.pagamento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.valor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.excluir = New System.Windows.Forms.DataGridViewImageColumn()
         Me.tab_vendas.SuspendLayout()
         Me.tab_venda_consulta.SuspendLayout()
         CType(Me.dgv_vendas, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,7 +80,7 @@ Partial Class Vendas
         '
         Me.dgv_vendas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgv_vendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_vendas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.data, Me.nome, Me.cliente, Me.pagamento, Me.excluir})
+        Me.dgv_vendas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.data, Me.nome, Me.cliente, Me.pagamento, Me.valor, Me.excluir})
         Me.dgv_vendas.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_vendas.Location = New System.Drawing.Point(2, 1)
         Me.dgv_vendas.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
@@ -88,42 +89,6 @@ Partial Class Vendas
         Me.dgv_vendas.RowTemplate.Height = 28
         Me.dgv_vendas.Size = New System.Drawing.Size(463, 202)
         Me.dgv_vendas.TabIndex = 0
-        '
-        'id
-        '
-        Me.id.HeaderText = "ID"
-        Me.id.MinimumWidth = 8
-        Me.id.Name = "id"
-        '
-        'data
-        '
-        Me.data.HeaderText = "Data"
-        Me.data.MinimumWidth = 8
-        Me.data.Name = "data"
-        '
-        'nome
-        '
-        Me.nome.HeaderText = "Nome"
-        Me.nome.MinimumWidth = 8
-        Me.nome.Name = "nome"
-        '
-        'cliente
-        '
-        Me.cliente.HeaderText = "Cliente"
-        Me.cliente.MinimumWidth = 8
-        Me.cliente.Name = "cliente"
-        '
-        'pagamento
-        '
-        Me.pagamento.HeaderText = "Pagamento"
-        Me.pagamento.MinimumWidth = 8
-        Me.pagamento.Name = "pagamento"
-        '
-        'excluir
-        '
-        Me.excluir.HeaderText = "Excluir"
-        Me.excluir.MinimumWidth = 8
-        Me.excluir.Name = "excluir"
         '
         'tab_venda_cadastro
         '
@@ -284,6 +249,47 @@ Partial Class Vendas
         Me.txt_valor.Size = New System.Drawing.Size(346, 20)
         Me.txt_valor.TabIndex = 4
         '
+        'id
+        '
+        Me.id.HeaderText = "ID"
+        Me.id.MinimumWidth = 8
+        Me.id.Name = "id"
+        '
+        'data
+        '
+        Me.data.HeaderText = "Data"
+        Me.data.MinimumWidth = 8
+        Me.data.Name = "data"
+        '
+        'nome
+        '
+        Me.nome.HeaderText = "Nome"
+        Me.nome.MinimumWidth = 8
+        Me.nome.Name = "nome"
+        '
+        'cliente
+        '
+        Me.cliente.HeaderText = "Cliente"
+        Me.cliente.MinimumWidth = 8
+        Me.cliente.Name = "cliente"
+        '
+        'pagamento
+        '
+        Me.pagamento.HeaderText = "Pagamento"
+        Me.pagamento.MinimumWidth = 8
+        Me.pagamento.Name = "pagamento"
+        '
+        'valor
+        '
+        Me.valor.HeaderText = "Valor"
+        Me.valor.Name = "valor"
+        '
+        'excluir
+        '
+        Me.excluir.HeaderText = "Excluir"
+        Me.excluir.MinimumWidth = 8
+        Me.excluir.Name = "excluir"
+        '
         'Vendas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -307,12 +313,6 @@ Partial Class Vendas
     Friend WithEvents tab_venda_consulta As TabPage
     Friend WithEvents tab_venda_cadastro As TabPage
     Friend WithEvents dgv_vendas As DataGridView
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents data As DataGridViewTextBoxColumn
-    Friend WithEvents nome As DataGridViewTextBoxColumn
-    Friend WithEvents cliente As DataGridViewTextBoxColumn
-    Friend WithEvents pagamento As DataGridViewTextBoxColumn
-    Friend WithEvents excluir As DataGridViewImageColumn
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Label1 As Label
     Friend WithEvents txt_data As TextBox
@@ -325,4 +325,11 @@ Partial Class Vendas
     Friend WithEvents btn_cadastrar As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents txt_valor As TextBox
+    Friend WithEvents id As DataGridViewTextBoxColumn
+    Friend WithEvents data As DataGridViewTextBoxColumn
+    Friend WithEvents nome As DataGridViewTextBoxColumn
+    Friend WithEvents cliente As DataGridViewTextBoxColumn
+    Friend WithEvents pagamento As DataGridViewTextBoxColumn
+    Friend WithEvents valor As DataGridViewTextBoxColumn
+    Friend WithEvents excluir As DataGridViewImageColumn
 End Class

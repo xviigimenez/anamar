@@ -36,11 +36,11 @@
 
     Private Sub dgv_vendas_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_vendas.CellContentClick
         With dgv_vendas
-            If .CurrentRow.Cells(5).Selected = True Then
+            If .CurrentRow.Cells(6).Selected = True Then
                 resp = MsgBox("Deseja realmente excluir?", MsgBoxStyle.Question + vbYesNo, "Excluir registro")
                 If resp = vbYes Then
                     Try
-                        sql = "delete from vendas where id =" & .CurrentRow.Cells(0).Value & ""
+                        sql = "delete from vendas where id_venda =" & .CurrentRow.Cells(0).Value & ""
                         db.Execute(sql)
                         ' Atualiza os registros novamente
                         carregar_dados_vendas()

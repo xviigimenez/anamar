@@ -35,7 +35,7 @@
             With Vendas.dgv_vendas
                 .Rows.Clear()
                 Do While rs.EOF = False
-                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value)
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value)
                     ' Continua lendo as próximas linhas
                     rs.MoveNext()
                 Loop
@@ -228,18 +228,18 @@
                 .lbl_data.Text = "Data atual: " & Date.Today & ""
                 ' Vendas do dia
                 'sql = "select count(*) from vendas where data = #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day & "#" ' Esses "#" me levaram mais de uma hora...
-                sql = "select count(*) from vendas where data = #" & Date.Today & "#" ' Esses "#" me levaram mais de uma hora...
+                sql = "select count(*), sum(valor) from vendas where data = #" & Date.Today & "#" ' Esses "#" me levaram mais de uma hora...
                 rs = db.Execute(sql)
-                .lbl_vendas_hoje.Text = "Vendas realizadas hoje: " & rs.Fields(0).Value & ""
+                .lbl_vendas_hoje.Text = "Vendas realizadas hoje: " & rs.Fields(0).Value & " (R$" & rs.Fields(1).Value & ")"
                 ' Vendas da semana
                 'sql = "select count(*) from vendas where data between #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day - Date.Today.DayOfWeek & " and #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day + 7 - Date.Today.DayOfWeek & "#" ' Dá problema ao gerar resultados que são maiores do que 31 ao invés de passar para o mês seguinte
-                sql = "select count(*) from vendas where data between #" & Date.Today.AddDays(-Date.Today.DayOfWeek) & "# and #" & Date.Today.AddDays(7 - Date.Today.DayOfWeek) & "#" ' Este aqui funciona tranquilamente...
+                sql = "select count(*), sum(valor) from vendas where data between #" & Date.Today.AddDays(-Date.Today.DayOfWeek) & "# and #" & Date.Today.AddDays(6 - Date.Today.DayOfWeek) & "#" ' Este aqui funciona tranquilamente...
                 rs = db.Execute(sql)
-                .lbl_vendas_semana.Text = "Vendas realizadas nesta semana: " & rs.Fields(0).Value & ""
+                .lbl_vendas_semana.Text = "Vendas realizadas nesta semana: " & rs.Fields(0).Value & " (R$" & rs.Fields(1).Value & ")" ' Não está funcionando
                 ' Vendas do mês
-                sql = "select count(*) from vendas where data between #" & Date.Today.Year & "-" & Date.Today.Month & "-01# and #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.DaysInMonth(Date.Today.Year, Date.Today.Month) & "#"
+                sql = "select count(*), sum(valor) from vendas where data between #" & Date.Today.Year & "-" & Date.Today.Month & "-01# and #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.DaysInMonth(Date.Today.Year, Date.Today.Month) & "#"
                 rs = db.Execute(sql)
-                .lbl_vendas_mês.Text = "Vendas realizadas no mês: " & rs.Fields(0).Value & ""
+                .lbl_vendas_mês.Text = "Vendas realizadas no mês: " & rs.Fields(0).Value & " (R$" & rs.Fields(1).Value & ")"
             End With
         Catch ex As Exception
             MsgBox(ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao carregar informações")

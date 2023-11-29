@@ -78,7 +78,7 @@
                 resp = MsgBox("Deseja realmente excluir?", MsgBoxStyle.Question + vbYesNo, "Excluir estoque")
                 If resp = vbYes Then
                     Try
-                        sql = "delete from estoque where id =" & .CurrentRow.Cells(0).Value & ""
+                        sql = "delete from estoque where id_produto =" & .CurrentRow.Cells(0).Value & ""
                         db.Execute(sql)
                         ' Atualiza os registros novamente
                         carregar_dados_estoque()
