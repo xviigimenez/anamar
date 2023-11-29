@@ -98,7 +98,7 @@
         With Estoque
             .cmb_nome.Text = ""
             .txt_quantidade.Clear()
-            .txt_preco.Clear()
+            .txt_preco_compra.Clear()
             .cmb_nome.Focus()
         End With
     End Sub

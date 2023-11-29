@@ -8,14 +8,14 @@
         carregar_fornecedores_vendas()
     End Sub
 
-    Private Sub btn_limpar_Click(sender As Object, e As EventArgs) Handles btn_limpar.Click
+    Private Sub btn_limpar_Click(sender As Object, e As EventArgs)
         limpar_dados_estoque_compra()
     End Sub
 
-    Private Sub btn_cadastrar_Click(sender As Object, e As EventArgs) Handles btn_cadastrar.Click
+    Private Sub btn_cadastrar_Click(sender As Object, e As EventArgs)
         Try
             ' Cadastra a compra
-            sql = "insert into compras (data, nome, fornecedor, quantia, valor, pagamento) values ('" & txt_data.Text & "', '" & cmb_nome.Text & "', '" & cmb_fornecedor.Text & "', '" & txt_quantidade.Text & "', '" & txt_preco.Text & "', '" & cmb_pagamento.Text & "')"
+            sql = "insert into compras (data, nome, fornecedor, quantia, preco_compra, pagamento) values ('" & txt_data.Text & "', '" & cmb_nome.Text & "', '" & cmb_fornecedor.Text & "', '" & txt_quantidade.Text & "', '" & txt_preco_compra.Text & "', '" & cmb_pagamento.Text & "')"
             db.Execute(sql)
             MsgBox("Compra cadastrada com sucesso!", MsgBoxStyle.Information + vbOKOnly, "Cadastro de compra")
             ' Verifica caso já existe o produto no estoque
@@ -23,27 +23,31 @@
             rs = db.Execute(sql)
             If rs.EOF = True Then
                 ' Cadastra o produto no estoque
-                sql = "insert into estoque (nome, quantia, preco, data) values ('" & cmb_nome.Text & "', '" & txt_quantidade.Text & "', '" & txt_preco.Text & "', '" & txt_data.Text & "')"
+                sql = "insert into estoque (nome, quantia, preco_venda, data) values ('" & cmb_nome.Text & "', '" & txt_quantidade.Text & "', '" & txt_preco_venda.Text & "', '" & txt_data.Text & "')"
                 db.Execute(sql)
                 MsgBox("Produto cadastrado no estoque com sucesso!", MsgBoxStyle.Information + vbOKOnly, "Cadastro de estoque")
             Else
                 sql = "select quantia from estoque where nome = '" & cmb_nome.Text & "'"
                 rs = db.Execute(sql)
                 Dim quantia = rs.Fields(0).Value
-                sql = "update estoque set quantia = " & quantia + txt_quantidade.Text & ", preco = " & txt_preco.Text & " where nome = '" & cmb_nome.Text & "'"
+                sql = "update estoque set quantia = " & quantia + txt_quantidade.Text & ", preco_venda = " & txt_preco_venda.Text & " where nome = '" & cmb_nome.Text & "'"
                 db.Execute(sql)
                 MsgBox("Quantia e preço atualizados com sucesso!", MsgBoxStyle.Information + vbOKOnly, "Cadastro de estoque")
-                ' Atualiza com os novos valores
-                carregar_dados_estoque()
-                ' Atualiza a lista de produtos
-                carregar_produtos_estoque()
             End If
             limpar_dados_estoque_produto()
-            ' Atualiza os dados da tabela
+            ' Atualiza a tabela de compras
             carregar_dados_compras()
+            ' Atualiza a tabela de estoque
+            carregar_dados_estoque()
+            ' Atualiza os produtos no ComboBox
+            carregar_produtos_estoque()
         Catch ex As Exception
             MsgBox(ex.ToString, MsgBoxStyle.Critical + vbOKOnly, "Cadastro de compra")
         End Try
+    End Sub
+
+    Private Sub btn_cadastrar_Click_1(sender As Object, e As EventArgs) Handles btn_cadastrar.Click
+        btn_cadastrar_Click(sender, e)
     End Sub
 
     Private Sub dgv_compras_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_compras.CellContentClick
@@ -52,7 +56,7 @@
                 resp = MsgBox("Deseja realmente excluir?", MsgBoxStyle.Question + vbYesNo, "Excluir compra")
                 If resp = vbYes Then
                     Try
-                        sql = "delete from compras where id =" & .CurrentRow.Cells(0).Value & ""
+                        sql = "delete from compras where id_compra =" & .CurrentRow.Cells(0).Value & ""
                         db.Execute(sql)
                         ' Atualiza os registros novamente
                         carregar_dados_compras()
