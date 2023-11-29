@@ -175,7 +175,7 @@ Partial Class Vendas
         Me.txt_cadastrar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.txt_cadastrar.Name = "txt_cadastrar"
         Me.txt_cadastrar.Size = New System.Drawing.Size(459, 81)
-        Me.txt_cadastrar.TabIndex = 14
+        Me.txt_cadastrar.TabIndex = 5
         Me.txt_cadastrar.Text = "Cadastrar"
         Me.txt_cadastrar.UseVisualStyleBackColor = True
         '
@@ -198,7 +198,7 @@ Partial Class Vendas
         Me.txt_data.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.txt_data.Name = "txt_data"
         Me.txt_data.Size = New System.Drawing.Size(346, 20)
-        Me.txt_data.TabIndex = 4
+        Me.txt_data.TabIndex = 0
         '
         'cmb_pagamento
         '
@@ -209,7 +209,7 @@ Partial Class Vendas
         Me.cmb_pagamento.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.cmb_pagamento.Name = "cmb_pagamento"
         Me.cmb_pagamento.Size = New System.Drawing.Size(346, 21)
-        Me.cmb_pagamento.TabIndex = 7
+        Me.cmb_pagamento.TabIndex = 3
         '
         'Label3
         '
@@ -241,7 +241,7 @@ Partial Class Vendas
         Me.cmb_produto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmb_produto.Name = "cmb_produto"
         Me.cmb_produto.Size = New System.Drawing.Size(346, 21)
-        Me.cmb_produto.TabIndex = 11
+        Me.cmb_produto.TabIndex = 2
         '
         'cmb_cliente
         '
@@ -251,7 +251,7 @@ Partial Class Vendas
         Me.cmb_cliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmb_cliente.Name = "cmb_cliente"
         Me.cmb_cliente.Size = New System.Drawing.Size(346, 21)
-        Me.cmb_cliente.TabIndex = 12
+        Me.cmb_cliente.TabIndex = 1
         '
         'Label4
         '
@@ -282,7 +282,7 @@ Partial Class Vendas
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(346, 20)
-        Me.TextBox1.TabIndex = 16
+        Me.TextBox1.TabIndex = 4
         '
         'Vendas
         '

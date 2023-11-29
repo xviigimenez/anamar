@@ -303,7 +303,7 @@ Partial Class Estoque
         Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.btn_cadastrar.Name = "btn_cadastrar"
         Me.btn_cadastrar.Size = New System.Drawing.Size(545, 29)
-        Me.btn_cadastrar.TabIndex = 12
+        Me.btn_cadastrar.TabIndex = 7
         Me.btn_cadastrar.Text = "Cadastrar"
         Me.btn_cadastrar.UseVisualStyleBackColor = True
         '
@@ -326,7 +326,7 @@ Partial Class Estoque
         Me.txt_preco_compra.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.txt_preco_compra.Name = "txt_preco_compra"
         Me.txt_preco_compra.Size = New System.Drawing.Size(545, 20)
-        Me.txt_preco_compra.TabIndex = 6
+        Me.txt_preco_compra.TabIndex = 5
         '
         'Label2
         '
@@ -358,7 +358,7 @@ Partial Class Estoque
         Me.txt_quantidade.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.txt_quantidade.Name = "txt_quantidade"
         Me.txt_quantidade.Size = New System.Drawing.Size(545, 20)
-        Me.txt_quantidade.TabIndex = 5
+        Me.txt_quantidade.TabIndex = 4
         '
         'cmb_nome
         '
@@ -369,7 +369,7 @@ Partial Class Estoque
         Me.cmb_nome.Margin = New System.Windows.Forms.Padding(2)
         Me.cmb_nome.Name = "cmb_nome"
         Me.cmb_nome.Size = New System.Drawing.Size(545, 21)
-        Me.cmb_nome.TabIndex = 9
+        Me.cmb_nome.TabIndex = 3
         '
         'Label6
         '
@@ -388,7 +388,7 @@ Partial Class Estoque
         Me.txt_preco_venda.Location = New System.Drawing.Point(95, 72)
         Me.txt_preco_venda.Name = "txt_preco_venda"
         Me.txt_preco_venda.Size = New System.Drawing.Size(543, 20)
-        Me.txt_preco_venda.TabIndex = 11
+        Me.txt_preco_venda.TabIndex = 6
         '
         'GroupBox1
         '
@@ -469,7 +469,7 @@ Partial Class Estoque
         Me.txt_data.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.txt_data.Name = "txt_data"
         Me.txt_data.Size = New System.Drawing.Size(572, 20)
-        Me.txt_data.TabIndex = 7
+        Me.txt_data.TabIndex = 0
         '
         'cmb_pagamento
         '
@@ -481,7 +481,7 @@ Partial Class Estoque
         Me.cmb_pagamento.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.cmb_pagamento.Name = "cmb_pagamento"
         Me.cmb_pagamento.Size = New System.Drawing.Size(572, 21)
-        Me.cmb_pagamento.TabIndex = 14
+        Me.cmb_pagamento.TabIndex = 2
         '
         'btn_limpar
         '
@@ -504,7 +504,7 @@ Partial Class Estoque
         Me.cmb_fornecedor.Margin = New System.Windows.Forms.Padding(2)
         Me.cmb_fornecedor.Name = "cmb_fornecedor"
         Me.cmb_fornecedor.Size = New System.Drawing.Size(572, 21)
-        Me.cmb_fornecedor.TabIndex = 16
+        Me.cmb_fornecedor.TabIndex = 1
         '
         'Label7
         '

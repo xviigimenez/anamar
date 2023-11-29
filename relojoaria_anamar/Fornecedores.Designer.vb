@@ -57,6 +57,7 @@ Partial Class Fornecedores
         Me.TableLayoutPanel1.Controls.Add(Me.btn_limpar, 0, 5)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 6
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
@@ -64,17 +65,18 @@ Partial Class Fornecedores
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(503, 241)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(334, 172)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(3, 0)
+        Me.Label1.Location = New System.Drawing.Point(2, 0)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 20)
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nome"
         '
@@ -82,79 +84,88 @@ Partial Class Fornecedores
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(3, 34)
+        Me.Label2.Location = New System.Drawing.Point(2, 25)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 20)
+        Me.Label2.Size = New System.Drawing.Size(68, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Telefone 1"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(3, 66)
+        Me.Label3.Location = New System.Drawing.Point(2, 49)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 20)
+        Me.Label3.Size = New System.Drawing.Size(58, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Telefone 2"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(3, 98)
+        Me.Label4.Location = New System.Drawing.Point(2, 73)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 20)
+        Me.Label4.Size = New System.Drawing.Size(53, 13)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Endereço"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(3, 130)
+        Me.Label5.Location = New System.Drawing.Point(2, 97)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(49, 20)
+        Me.Label5.Size = New System.Drawing.Size(34, 13)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "CNPJ"
         '
         'txt_telefone1
         '
         Me.txt_telefone1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txt_telefone1.Location = New System.Drawing.Point(254, 37)
+        Me.txt_telefone1.Location = New System.Drawing.Point(169, 27)
+        Me.txt_telefone1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt_telefone1.Name = "txt_telefone1"
-        Me.txt_telefone1.Size = New System.Drawing.Size(246, 26)
-        Me.txt_telefone1.TabIndex = 6
+        Me.txt_telefone1.Size = New System.Drawing.Size(163, 20)
+        Me.txt_telefone1.TabIndex = 1
         '
         'txt_telefone2
         '
         Me.txt_telefone2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txt_telefone2.Location = New System.Drawing.Point(254, 69)
+        Me.txt_telefone2.Location = New System.Drawing.Point(169, 51)
+        Me.txt_telefone2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt_telefone2.Name = "txt_telefone2"
-        Me.txt_telefone2.Size = New System.Drawing.Size(246, 26)
-        Me.txt_telefone2.TabIndex = 7
+        Me.txt_telefone2.Size = New System.Drawing.Size(163, 20)
+        Me.txt_telefone2.TabIndex = 2
         '
         'txt_endereco
         '
         Me.txt_endereco.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txt_endereco.Location = New System.Drawing.Point(254, 101)
+        Me.txt_endereco.Location = New System.Drawing.Point(169, 75)
+        Me.txt_endereco.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt_endereco.Name = "txt_endereco"
-        Me.txt_endereco.Size = New System.Drawing.Size(246, 26)
-        Me.txt_endereco.TabIndex = 8
+        Me.txt_endereco.Size = New System.Drawing.Size(163, 20)
+        Me.txt_endereco.TabIndex = 3
         '
         'txt_cnpj
         '
         Me.txt_cnpj.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txt_cnpj.Location = New System.Drawing.Point(254, 133)
+        Me.txt_cnpj.Location = New System.Drawing.Point(169, 99)
+        Me.txt_cnpj.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt_cnpj.Name = "txt_cnpj"
-        Me.txt_cnpj.Size = New System.Drawing.Size(246, 26)
-        Me.txt_cnpj.TabIndex = 9
+        Me.txt_cnpj.Size = New System.Drawing.Size(163, 20)
+        Me.txt_cnpj.TabIndex = 4
         '
         'btn_cadastrar
         '
         Me.btn_cadastrar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btn_cadastrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_cadastrar.Location = New System.Drawing.Point(254, 165)
+        Me.btn_cadastrar.Location = New System.Drawing.Point(169, 123)
+        Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btn_cadastrar.Name = "btn_cadastrar"
-        Me.btn_cadastrar.Size = New System.Drawing.Size(246, 73)
-        Me.btn_cadastrar.TabIndex = 10
+        Me.btn_cadastrar.Size = New System.Drawing.Size(163, 47)
+        Me.btn_cadastrar.TabIndex = 5
         Me.btn_cadastrar.Text = "Cadastrar"
         Me.btn_cadastrar.UseVisualStyleBackColor = True
         '
@@ -162,27 +173,30 @@ Partial Class Fornecedores
         '
         Me.cmb_nome.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cmb_nome.FormattingEnabled = True
-        Me.cmb_nome.Location = New System.Drawing.Point(254, 3)
+        Me.cmb_nome.Location = New System.Drawing.Point(169, 2)
+        Me.cmb_nome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmb_nome.Name = "cmb_nome"
-        Me.cmb_nome.Size = New System.Drawing.Size(246, 28)
-        Me.cmb_nome.TabIndex = 11
+        Me.cmb_nome.Size = New System.Drawing.Size(163, 21)
+        Me.cmb_nome.TabIndex = 0
         '
         'btn_limpar
         '
         Me.btn_limpar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btn_limpar.Location = New System.Drawing.Point(3, 165)
+        Me.btn_limpar.Location = New System.Drawing.Point(2, 123)
+        Me.btn_limpar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btn_limpar.Name = "btn_limpar"
-        Me.btn_limpar.Size = New System.Drawing.Size(245, 73)
+        Me.btn_limpar.Size = New System.Drawing.Size(163, 47)
         Me.btn_limpar.TabIndex = 12
         Me.btn_limpar.Text = "Limpar"
         Me.btn_limpar.UseVisualStyleBackColor = True
         '
         'Fornecedores
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(503, 241)
+        Me.ClientSize = New System.Drawing.Size(334, 172)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Fornecedores"
         Me.Text = "Fornecedores"
         Me.TableLayoutPanel1.ResumeLayout(False)
