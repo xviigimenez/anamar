@@ -8,15 +8,15 @@
 
     Private Sub cmb_nome_LostFocus(sender As Object, e As EventArgs)
         Try
-            sql = "select id, telefone, cpf, endereco from clientes where nome = '" & cmb_nome.Text & "'"
+            sql = "select telefone, cpf, endereco from clientes where nome = '" & cmb_nome.Text & "'"
             rs = db.Execute(sql)
             If rs.EOF = False Then
                 ' Avisa a outra função que o cadastro já existe
                 existe = True
                 ' Completa os outros campos com o valores já cadastrados
-                txt_telefone.Text = rs.Fields(1).Value
-                txt_cpf.Text = rs.Fields(2).Value
-                txt_endereco.Text = rs.Fields(3).Value
+                txt_telefone.Text = rs.Fields(0).Value
+                txt_cpf.Text = rs.Fields(1).Value
+                txt_endereco.Text = rs.Fields(2).Value
             Else
                 ' Avisa que não existe nenhum cliente com esse nome
                 existe = False

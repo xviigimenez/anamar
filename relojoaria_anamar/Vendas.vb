@@ -8,7 +8,7 @@
         cmb_produto.Focus()
     End Sub
 
-    Private Sub txt_cadastrar_Click(sender As Object, e As EventArgs) Handles txt_cadastrar.Click
+    Private Sub txt_cadastrar_Click(sender As Object, e As EventArgs)
         Try
             'sql = "select * from tb_vendas where usuario='" & txt_data.Text & "'"
             'rs = db.Execute(sql)
@@ -46,5 +46,15 @@
                 End If
             End If
         End With
+    End Sub
+
+    Private Sub cmb_produto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_produto.SelectedIndexChanged
+        Try
+            sql = "select preco from estoque where nome = '" & cmb_produto.Text & "'"
+            rs = db.Execute(sql)
+            cmb_produto.Text = rs.Fields(0).Value
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.Critical + vbOKOnly, "Erro ao carregar pre~ço do produto")
+        End Try
     End Sub
 End Class

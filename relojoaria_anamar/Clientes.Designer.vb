@@ -32,6 +32,7 @@ Partial Class Clientes
         Me.txt_endereco = New System.Windows.Forms.TextBox()
         Me.btn_cadastrar = New System.Windows.Forms.Button()
         Me.cmb_nome = New System.Windows.Forms.ComboBox()
+        Me.btn_limpar = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,6 +50,7 @@ Partial Class Clientes
         Me.TableLayoutPanel1.Controls.Add(Me.txt_endereco, 1, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.btn_cadastrar, 1, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.cmb_nome, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btn_limpar, 0, 4)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -126,11 +128,11 @@ Partial Class Clientes
         '
         'btn_cadastrar
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.btn_cadastrar, 2)
         Me.btn_cadastrar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btn_cadastrar.Location = New System.Drawing.Point(3, 133)
+        Me.btn_cadastrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cadastrar.Location = New System.Drawing.Point(239, 133)
         Me.btn_cadastrar.Name = "btn_cadastrar"
-        Me.btn_cadastrar.Size = New System.Drawing.Size(467, 120)
+        Me.btn_cadastrar.Size = New System.Drawing.Size(231, 120)
         Me.btn_cadastrar.TabIndex = 9
         Me.btn_cadastrar.Text = "Cadastrar"
         Me.btn_cadastrar.UseVisualStyleBackColor = True
@@ -143,6 +145,16 @@ Partial Class Clientes
         Me.cmb_nome.Name = "cmb_nome"
         Me.cmb_nome.Size = New System.Drawing.Size(231, 28)
         Me.cmb_nome.TabIndex = 10
+        '
+        'btn_limpar
+        '
+        Me.btn_limpar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btn_limpar.Location = New System.Drawing.Point(3, 133)
+        Me.btn_limpar.Name = "btn_limpar"
+        Me.btn_limpar.Size = New System.Drawing.Size(230, 120)
+        Me.btn_limpar.TabIndex = 11
+        Me.btn_limpar.Text = "Limpar"
+        Me.btn_limpar.UseVisualStyleBackColor = True
         '
         'Clientes
         '
@@ -168,4 +180,5 @@ Partial Class Clientes
     Friend WithEvents txt_endereco As TextBox
     Friend WithEvents btn_cadastrar As Button
     Friend WithEvents cmb_nome As ComboBox
+    Friend WithEvents btn_limpar As Button
 End Class

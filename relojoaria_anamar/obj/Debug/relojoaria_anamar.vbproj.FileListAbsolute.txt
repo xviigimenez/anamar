@@ -21,8 +21,6 @@ D:\portablegit\anamar\relojoaria_anamar\bin\Debug\relojoaria_anamar.exe.config
 D:\portablegit\anamar\relojoaria_anamar\bin\Debug\relojoaria_anamar.exe
 D:\portablegit\anamar\relojoaria_anamar\bin\Debug\relojoaria_anamar.pdb
 D:\portablegit\anamar\relojoaria_anamar\bin\Debug\relojoaria_anamar.xml
-D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.AssemblyReference.cache
-D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.SuggestedBindingRedirects.cache
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\Interop.ADODB.dll
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.ResolveComReference.cache
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Estoque.resources
@@ -32,9 +30,9 @@ D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.MenuInicial.
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Resources.resources
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Vendas.resources
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.GenerateResource.cache
-D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.CoreCompileInputs.cache
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.exe
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.xml
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.pdb
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Clientes.resources
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Fornecedores.resources
+D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbprojResolveAssemblyReference.cache

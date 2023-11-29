@@ -34,6 +34,7 @@ Partial Class Fornecedores
         Me.txt_cnpj = New System.Windows.Forms.TextBox()
         Me.btn_cadastrar = New System.Windows.Forms.Button()
         Me.cmb_nome = New System.Windows.Forms.ComboBox()
+        Me.btn_limpar = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,6 +54,7 @@ Partial Class Fornecedores
         Me.TableLayoutPanel1.Controls.Add(Me.txt_cnpj, 1, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.btn_cadastrar, 1, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.cmb_nome, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btn_limpar, 0, 5)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -62,9 +64,8 @@ Partial Class Fornecedores
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(503, 318)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(503, 241)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'Label1
@@ -148,11 +149,11 @@ Partial Class Fornecedores
         '
         'btn_cadastrar
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.btn_cadastrar, 2)
         Me.btn_cadastrar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btn_cadastrar.Location = New System.Drawing.Point(3, 165)
+        Me.btn_cadastrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cadastrar.Location = New System.Drawing.Point(254, 165)
         Me.btn_cadastrar.Name = "btn_cadastrar"
-        Me.btn_cadastrar.Size = New System.Drawing.Size(497, 150)
+        Me.btn_cadastrar.Size = New System.Drawing.Size(246, 73)
         Me.btn_cadastrar.TabIndex = 10
         Me.btn_cadastrar.Text = "Cadastrar"
         Me.btn_cadastrar.UseVisualStyleBackColor = True
@@ -166,11 +167,21 @@ Partial Class Fornecedores
         Me.cmb_nome.Size = New System.Drawing.Size(246, 28)
         Me.cmb_nome.TabIndex = 11
         '
+        'btn_limpar
+        '
+        Me.btn_limpar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btn_limpar.Location = New System.Drawing.Point(3, 165)
+        Me.btn_limpar.Name = "btn_limpar"
+        Me.btn_limpar.Size = New System.Drawing.Size(245, 73)
+        Me.btn_limpar.TabIndex = 12
+        Me.btn_limpar.Text = "Limpar"
+        Me.btn_limpar.UseVisualStyleBackColor = True
+        '
         'Fornecedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(503, 318)
+        Me.ClientSize = New System.Drawing.Size(503, 241)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "Fornecedores"
         Me.Text = "Fornecedores"
@@ -192,4 +203,5 @@ Partial Class Fornecedores
     Friend WithEvents txt_cnpj As TextBox
     Friend WithEvents btn_cadastrar As Button
     Friend WithEvents cmb_nome As ComboBox
+    Friend WithEvents btn_limpar As Button
 End Class

@@ -54,4 +54,8 @@
         Catch ex As Exception
         End Try
     End Sub
+
+    Private Sub btn_limpar_Click(sender As Object, e As EventArgs) Handles btn_limpar.Click
+        limpar_dados_fornecedores()
+    End Sub
 End Class
