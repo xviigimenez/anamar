@@ -84,6 +84,7 @@
             .cmb_pagamento.Text = ""
             .cmb_produto.Focus()
             .txt_valor.Clear()
+            .txt_quantia.Clear()
         End With
     End Sub
 
@@ -100,6 +101,7 @@
             .cmb_nome.Text = ""
             .txt_quantidade.Clear()
             .txt_preco_compra.Clear()
+            .txt_preco_venda.Clear()
             .cmb_nome.Focus()
         End With
     End Sub
@@ -128,7 +130,7 @@
     ' Carrega os produtos no ComboBox
     Sub carregar_produtos_vendas()
         Try
-            sql = "select nome from estoque"
+            sql = "select nome from estoque where quantia > 0"
             rs = db.Execute(sql)
             With Vendas.cmb_produto.Items
                 .Clear()
@@ -227,13 +229,13 @@
             With MenuInicial
                 .lbl_data.Text = "Data atual: " & Date.Today & ""
                 ' Vendas do dia
-                'sql = "select count(*) from vendas where data = #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day & "#" ' Esses "#" me levaram mais de uma hora...
-                sql = "select count(*), sum(valor) from vendas where data = #" & Date.Today & "#" ' Esses "#" me levaram mais de uma hora...
+                sql = "select count(*), sum(valor) from vendas where data = #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day & "#" ' Esses "#" me levaram mais de uma hora...
+                'sql = "select count(*), sum(valor) from vendas where data = #" & Date.Today & "#" ' Funcionava antes, não funciona mais...
                 rs = db.Execute(sql)
                 .lbl_vendas_hoje.Text = "Vendas realizadas hoje: " & rs.Fields(0).Value & " (R$" & rs.Fields(1).Value & ")"
                 ' Vendas da semana
-                'sql = "select count(*) from vendas where data between #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day - Date.Today.DayOfWeek & " and #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day + 7 - Date.Today.DayOfWeek & "#" ' Dá problema ao gerar resultados que são maiores do que 31 ao invés de passar para o mês seguinte
-                sql = "select count(*), sum(valor) from vendas where data between #" & Date.Today.AddDays(-Date.Today.DayOfWeek) & "# and #" & Date.Today.AddDays(6 - Date.Today.DayOfWeek) & "#" ' Este aqui funciona tranquilamente...
+                sql = "select count(*), sum(valor) from vendas where data between #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day - Date.Today.DayOfWeek & "# and #" & Date.Today.Year & "-" & Date.Today.Month & "-" & Date.Today.Day + 6 - Date.Today.DayOfWeek & "#" ' Dá problema ao gerar resultados que são maiores do que 31 ao invés de passar para o mês seguinte
+                'sql = "select count(*), sum(valor) from vendas where data between #" & Date.Today.AddDays(-Date.Today.DayOfWeek) & "# and #" & Date.Today.AddDays(6 - Date.Today.DayOfWeek) & "#" ' Este aqui funciona tranquilamente...
                 rs = db.Execute(sql)
                 .lbl_vendas_semana.Text = "Vendas realizadas nesta semana: " & rs.Fields(0).Value & " (R$" & rs.Fields(1).Value & ")" ' Não está funcionando
                 ' Vendas do mês

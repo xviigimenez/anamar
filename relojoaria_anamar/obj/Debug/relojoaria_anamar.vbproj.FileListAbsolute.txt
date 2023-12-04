@@ -35,4 +35,6 @@ D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.xml
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.pdb
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Clientes.resources
 D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.Fornecedores.resources
-D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbprojResolveAssemblyReference.cache
+D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.AssemblyReference.cache
+D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.SuggestedBindingRedirects.cache
+D:\portablegit\anamar\relojoaria_anamar\obj\Debug\relojoaria_anamar.vbproj.CoreCompileInputs.cache

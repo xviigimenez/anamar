@@ -58,4 +58,8 @@
 
         End Try
     End Sub
+
+    Private Sub btn_limpar_Click(sender As Object, e As EventArgs) Handles btn_limpar.Click
+        limpar_dados_clientes()
+    End Sub
 End Class

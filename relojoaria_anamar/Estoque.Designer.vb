@@ -84,20 +84,20 @@ Partial Class Estoque
         Me.tab_estoque.Controls.Add(Me.tab_estoque_cadastro)
         Me.tab_estoque.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tab_estoque.Location = New System.Drawing.Point(0, 0)
-        Me.tab_estoque.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.tab_estoque.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.tab_estoque.Name = "tab_estoque"
         Me.tab_estoque.SelectedIndex = 0
-        Me.tab_estoque.Size = New System.Drawing.Size(661, 317)
+        Me.tab_estoque.Size = New System.Drawing.Size(881, 390)
         Me.tab_estoque.TabIndex = 0
         '
         'tab_consulta_estoque
         '
         Me.tab_consulta_estoque.Controls.Add(Me.dgv_estoque)
-        Me.tab_consulta_estoque.Location = New System.Drawing.Point(4, 22)
-        Me.tab_consulta_estoque.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.tab_consulta_estoque.Location = New System.Drawing.Point(4, 25)
+        Me.tab_consulta_estoque.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.tab_consulta_estoque.Name = "tab_consulta_estoque"
-        Me.tab_consulta_estoque.Padding = New System.Windows.Forms.Padding(2, 1, 2, 1)
-        Me.tab_consulta_estoque.Size = New System.Drawing.Size(653, 291)
+        Me.tab_consulta_estoque.Padding = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.tab_consulta_estoque.Size = New System.Drawing.Size(873, 361)
         Me.tab_consulta_estoque.TabIndex = 0
         Me.tab_consulta_estoque.Text = "Consulta de estoque"
         Me.tab_consulta_estoque.UseVisualStyleBackColor = True
@@ -108,12 +108,12 @@ Partial Class Estoque
         Me.dgv_estoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_estoque.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.estoque_id, Me.estoque_nome, Me.estoque_quantia, Me.estoque_preco, Me.estoque_data, Me.excluir_estoque})
         Me.dgv_estoque.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_estoque.Location = New System.Drawing.Point(2, 1)
-        Me.dgv_estoque.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.dgv_estoque.Location = New System.Drawing.Point(3, 1)
+        Me.dgv_estoque.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.dgv_estoque.Name = "dgv_estoque"
         Me.dgv_estoque.RowHeadersWidth = 62
         Me.dgv_estoque.RowTemplate.Height = 28
-        Me.dgv_estoque.Size = New System.Drawing.Size(649, 289)
+        Me.dgv_estoque.Size = New System.Drawing.Size(867, 359)
         Me.dgv_estoque.TabIndex = 0
         '
         'estoque_id
@@ -155,11 +155,11 @@ Partial Class Estoque
         'tab_consulta_compras
         '
         Me.tab_consulta_compras.Controls.Add(Me.dgv_compras)
-        Me.tab_consulta_compras.Location = New System.Drawing.Point(4, 22)
-        Me.tab_consulta_compras.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.tab_consulta_compras.Location = New System.Drawing.Point(4, 25)
+        Me.tab_consulta_compras.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.tab_consulta_compras.Name = "tab_consulta_compras"
-        Me.tab_consulta_compras.Padding = New System.Windows.Forms.Padding(2, 1, 2, 1)
-        Me.tab_consulta_compras.Size = New System.Drawing.Size(653, 291)
+        Me.tab_consulta_compras.Padding = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.tab_consulta_compras.Size = New System.Drawing.Size(873, 361)
         Me.tab_consulta_compras.TabIndex = 2
         Me.tab_consulta_compras.Text = "Consulta de compras"
         Me.tab_consulta_compras.UseVisualStyleBackColor = True
@@ -170,12 +170,12 @@ Partial Class Estoque
         Me.dgv_compras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_compras.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.compras_id, Me.compras_data, Me.compras_nome, Me.compras_fornecedor, Me.compras_quantia, Me.compras_valor, Me.compras_pagamento, Me.excluir_compras})
         Me.dgv_compras.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_compras.Location = New System.Drawing.Point(2, 1)
-        Me.dgv_compras.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.dgv_compras.Location = New System.Drawing.Point(3, 1)
+        Me.dgv_compras.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.dgv_compras.Name = "dgv_compras"
         Me.dgv_compras.RowHeadersWidth = 62
         Me.dgv_compras.RowTemplate.Height = 28
-        Me.dgv_compras.Size = New System.Drawing.Size(649, 289)
+        Me.dgv_compras.Size = New System.Drawing.Size(867, 359)
         Me.dgv_compras.TabIndex = 0
         '
         'compras_id
@@ -230,11 +230,11 @@ Partial Class Estoque
         '
         Me.tab_estoque_cadastro.Controls.Add(Me.TableLayoutPanel3)
         Me.tab_estoque_cadastro.Controls.Add(Me.Label7)
-        Me.tab_estoque_cadastro.Location = New System.Drawing.Point(4, 22)
-        Me.tab_estoque_cadastro.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.tab_estoque_cadastro.Location = New System.Drawing.Point(4, 25)
+        Me.tab_estoque_cadastro.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.tab_estoque_cadastro.Name = "tab_estoque_cadastro"
-        Me.tab_estoque_cadastro.Padding = New System.Windows.Forms.Padding(2, 1, 2, 1)
-        Me.tab_estoque_cadastro.Size = New System.Drawing.Size(653, 291)
+        Me.tab_estoque_cadastro.Padding = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.tab_estoque_cadastro.Size = New System.Drawing.Size(873, 361)
         Me.tab_estoque_cadastro.TabIndex = 1
         Me.tab_estoque_cadastro.Text = "Cadastro de compras"
         Me.tab_estoque_cadastro.UseVisualStyleBackColor = True
@@ -246,12 +246,13 @@ Partial Class Estoque
         Me.TableLayoutPanel3.Controls.Add(Me.GroupBox2, 0, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.GroupBox1, 0, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(2, 1)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 1)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(649, 289)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(867, 359)
         Me.TableLayoutPanel3.TabIndex = 17
         '
         'GroupBox2
@@ -259,11 +260,11 @@ Partial Class Estoque
         Me.GroupBox2.Controls.Add(Me.TableLayoutPanel2)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(2, 153)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.GroupBox2.Location = New System.Drawing.Point(3, 192)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 1, 2, 1)
-        Me.GroupBox2.Size = New System.Drawing.Size(645, 135)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.GroupBox2.Size = New System.Drawing.Size(861, 166)
         Me.GroupBox2.TabIndex = 17
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Produto"
@@ -283,26 +284,26 @@ Partial Class Estoque
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 0, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.txt_preco_venda, 1, 3)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(2, 14)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 17)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 5
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(641, 120)
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(855, 148)
         Me.TableLayoutPanel2.TabIndex = 9
         '
         'btn_cadastrar
         '
         Me.btn_cadastrar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btn_cadastrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_cadastrar.Location = New System.Drawing.Point(94, 90)
-        Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.btn_cadastrar.Location = New System.Drawing.Point(125, 104)
+        Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.btn_cadastrar.Name = "btn_cadastrar"
-        Me.btn_cadastrar.Size = New System.Drawing.Size(545, 29)
+        Me.btn_cadastrar.Size = New System.Drawing.Size(727, 43)
         Me.btn_cadastrar.TabIndex = 7
         Me.btn_cadastrar.Text = "Cadastrar"
         Me.btn_cadastrar.UseVisualStyleBackColor = True
@@ -311,10 +312,9 @@ Partial Class Estoque
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(2, 0)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(3, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 13)
+        Me.Label1.Size = New System.Drawing.Size(45, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nome"
         '
@@ -322,20 +322,19 @@ Partial Class Estoque
         '
         Me.txt_preco_compra.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txt_preco_compra.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_preco_compra.Location = New System.Drawing.Point(94, 48)
-        Me.txt_preco_compra.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txt_preco_compra.Location = New System.Drawing.Point(125, 54)
+        Me.txt_preco_compra.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txt_preco_compra.Name = "txt_preco_compra"
-        Me.txt_preco_compra.Size = New System.Drawing.Size(545, 20)
+        Me.txt_preco_compra.Size = New System.Drawing.Size(727, 23)
         Me.txt_preco_compra.TabIndex = 5
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(2, 25)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(3, 28)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 13)
+        Me.Label2.Size = New System.Drawing.Size(82, 17)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Quantidade"
         '
@@ -343,10 +342,9 @@ Partial Class Estoque
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(2, 47)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(3, 53)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(88, 13)
+        Me.Label3.Size = New System.Drawing.Size(116, 17)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Preço de compra"
         '
@@ -354,10 +352,10 @@ Partial Class Estoque
         '
         Me.txt_quantidade.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txt_quantidade.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_quantidade.Location = New System.Drawing.Point(94, 26)
-        Me.txt_quantidade.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txt_quantidade.Location = New System.Drawing.Point(125, 29)
+        Me.txt_quantidade.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txt_quantidade.Name = "txt_quantidade"
-        Me.txt_quantidade.Size = New System.Drawing.Size(545, 20)
+        Me.txt_quantidade.Size = New System.Drawing.Size(727, 23)
         Me.txt_quantidade.TabIndex = 4
         '
         'cmb_nome
@@ -365,19 +363,20 @@ Partial Class Estoque
         Me.cmb_nome.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cmb_nome.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmb_nome.FormattingEnabled = True
-        Me.cmb_nome.Location = New System.Drawing.Point(94, 2)
-        Me.cmb_nome.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_nome.Location = New System.Drawing.Point(125, 2)
+        Me.cmb_nome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmb_nome.Name = "cmb_nome"
-        Me.cmb_nome.Size = New System.Drawing.Size(545, 21)
+        Me.cmb_nome.Size = New System.Drawing.Size(727, 24)
         Me.cmb_nome.TabIndex = 3
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(3, 69)
+        Me.Label6.Location = New System.Drawing.Point(4, 78)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 13)
+        Me.Label6.Size = New System.Drawing.Size(108, 17)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Preço de venda"
         '
@@ -385,9 +384,10 @@ Partial Class Estoque
         '
         Me.txt_preco_venda.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txt_preco_venda.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_preco_venda.Location = New System.Drawing.Point(95, 72)
+        Me.txt_preco_venda.Location = New System.Drawing.Point(126, 82)
+        Me.txt_preco_venda.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_preco_venda.Name = "txt_preco_venda"
-        Me.txt_preco_venda.Size = New System.Drawing.Size(543, 20)
+        Me.txt_preco_venda.Size = New System.Drawing.Size(725, 23)
         Me.txt_preco_venda.TabIndex = 6
         '
         'GroupBox1
@@ -395,11 +395,11 @@ Partial Class Estoque
         Me.GroupBox1.Controls.Add(Me.TableLayoutPanel1)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(2, 1)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 1)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 1, 2, 1)
-        Me.GroupBox1.Size = New System.Drawing.Size(645, 125)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.GroupBox1.Size = New System.Drawing.Size(861, 154)
         Me.GroupBox1.TabIndex = 16
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Compra"
@@ -417,25 +417,24 @@ Partial Class Estoque
         Me.TableLayoutPanel1.Controls.Add(Me.btn_limpar, 1, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.cmb_fornecedor, 1, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(2, 14)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(3, 17)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(641, 110)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(855, 136)
         Me.TableLayoutPanel1.TabIndex = 15
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(2, 0)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(3, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(30, 13)
+        Me.Label4.Size = New System.Drawing.Size(38, 17)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Data"
         '
@@ -443,10 +442,9 @@ Partial Class Estoque
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(2, 22)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(3, 25)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(61, 13)
+        Me.Label5.Size = New System.Drawing.Size(81, 17)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Fornecedor"
         '
@@ -454,10 +452,9 @@ Partial Class Estoque
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(2, 47)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(3, 53)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(61, 13)
+        Me.Label8.Size = New System.Drawing.Size(80, 17)
         Me.Label8.TabIndex = 13
         Me.Label8.Text = "Pagamento"
         '
@@ -465,10 +462,10 @@ Partial Class Estoque
         '
         Me.txt_data.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txt_data.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_data.Location = New System.Drawing.Point(67, 1)
-        Me.txt_data.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txt_data.Location = New System.Drawing.Point(90, 1)
+        Me.txt_data.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txt_data.Name = "txt_data"
-        Me.txt_data.Size = New System.Drawing.Size(572, 20)
+        Me.txt_data.Size = New System.Drawing.Size(763, 23)
         Me.txt_data.TabIndex = 0
         '
         'cmb_pagamento
@@ -477,20 +474,20 @@ Partial Class Estoque
         Me.cmb_pagamento.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmb_pagamento.FormattingEnabled = True
         Me.cmb_pagamento.Items.AddRange(New Object() {"À vista", "À prazo"})
-        Me.cmb_pagamento.Location = New System.Drawing.Point(67, 48)
-        Me.cmb_pagamento.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.cmb_pagamento.Location = New System.Drawing.Point(90, 54)
+        Me.cmb_pagamento.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.cmb_pagamento.Name = "cmb_pagamento"
-        Me.cmb_pagamento.Size = New System.Drawing.Size(572, 21)
+        Me.cmb_pagamento.Size = New System.Drawing.Size(763, 24)
         Me.cmb_pagamento.TabIndex = 2
         '
         'btn_limpar
         '
         Me.btn_limpar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btn_limpar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_limpar.Location = New System.Drawing.Point(67, 72)
-        Me.btn_limpar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_limpar.Location = New System.Drawing.Point(90, 81)
+        Me.btn_limpar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_limpar.Name = "btn_limpar"
-        Me.btn_limpar.Size = New System.Drawing.Size(572, 36)
+        Me.btn_limpar.Size = New System.Drawing.Size(763, 53)
         Me.btn_limpar.TabIndex = 15
         Me.btn_limpar.Text = "Limpar campos"
         Me.btn_limpar.UseVisualStyleBackColor = True
@@ -500,30 +497,29 @@ Partial Class Estoque
         Me.cmb_fornecedor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cmb_fornecedor.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmb_fornecedor.FormattingEnabled = True
-        Me.cmb_fornecedor.Location = New System.Drawing.Point(67, 24)
-        Me.cmb_fornecedor.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_fornecedor.Location = New System.Drawing.Point(90, 27)
+        Me.cmb_fornecedor.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmb_fornecedor.Name = "cmb_fornecedor"
-        Me.cmb_fornecedor.Size = New System.Drawing.Size(572, 21)
+        Me.cmb_fornecedor.Size = New System.Drawing.Size(763, 24)
         Me.cmb_fornecedor.TabIndex = 1
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(117, 104)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(156, 128)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(51, 13)
+        Me.Label7.Size = New System.Drawing.Size(65, 17)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Produto"
         '
         'Estoque
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(661, 317)
+        Me.ClientSize = New System.Drawing.Size(881, 390)
         Me.Controls.Add(Me.tab_estoque)
-        Me.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.Name = "Estoque"
         Me.Text = "Estoque"
         Me.tab_estoque.ResumeLayout(False)
