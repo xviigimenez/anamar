@@ -8,9 +8,9 @@ Um sistema simples para controle de estoque e operação de ponto de venda escri
 
 ![Menu principal](menu_principal.jpeg)
 
-### Cadastro de estoque
+### Consulta de estoque
 
-![Cadastro de estoque](cadastro_de_estoque.jpeg)
+![Consulta de estoque](consulta_de_estoque.jpeg)
 
 ### Cadastro de vendas
 
